@@ -18,7 +18,7 @@ const Service = () => {
 
     return (
         <div id="services" className='container my-5'>
-            {/* <PageTitle title="Inventory"></PageTitle> */}
+
             <div className="row">
                 <h2 className='inventory1 text-3xl font-bold lg:my-20 my-9 '>FEATURED PRODUCTS</h2>
                 <div className="inventory-container">
