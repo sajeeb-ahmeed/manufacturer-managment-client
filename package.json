@@ -1,5 +1,8 @@
 {
   "name": "assignment-12-client",
   "version": "0.1.0",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "react-router-dom": "^6.3.0"
+  }
 }
