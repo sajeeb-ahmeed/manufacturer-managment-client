@@ -43,6 +43,11 @@
   color: azure;
 }
 
+.nav-bg1:hover {
+  background-color: #202447 !important;
+  color: azure;
+}
+
 .card-bg {
   background-color: #202447 !important;
   color: azure;
