@@ -43,6 +43,24 @@
   color: azure;
 }
 
+.card-bg {
+  background-color: #202447 !important;
+  color: azure;
+}
+
+.card-bg2 {
+  background-color: #FAB915 !important;
+  color: rgb(255, 255, 255);
+}
+
+.mycolor1 {
+  color: #202447 !important;
+}
+
+.mycolor2 {
+  color: #FAB915 !important;
+}
+
 .cursor {
   cursor: pointer;
 }
