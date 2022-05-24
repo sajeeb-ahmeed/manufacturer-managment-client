@@ -32,7 +32,17 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.nav-bg {
+  background-color: #202447 !important;
+  color: azure;
+}
+
+.cursor {
+  cursor: pointer;
 }
