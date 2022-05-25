@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { Button, Form } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import SocialLogin from "../SocialLogin/SocialLogin";
 import { useCreateUserWithEmailAndPassword, useUpdateProfile } from "react-firebase-hooks/auth";
 import auth from "../firebase.init";
 import "./SignUp.css";
+import toast from "react-hot-toast";
 
 const SignUp = () => {
   //Declaring State to Keep The values of Input Field
@@ -28,7 +29,8 @@ const SignUp = () => {
 
   //Using React Router DOM
   const navigate = useNavigate();
-
+  const location = useLocation();
+  let from = location?.state?.from?.pathname || "/";
   //Using Function to Redirect Login Route
   const handleGoToLogin = () => {
     navigate("/login");
@@ -63,7 +65,11 @@ const SignUp = () => {
     //Creating User with Email and Password and Update the user Name to firebase
     await createUserWithEmailAndPassword(email, password);
     await updateProfile({ displayName: name });
-    navigate("/");
+    if (createUserWithEmailAndPassword) {
+      navigate(from, { replace: true });
+      toast.success('Successfully created');
+    }
+
   };
 
   return (

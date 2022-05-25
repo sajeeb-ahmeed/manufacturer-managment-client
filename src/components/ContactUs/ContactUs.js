@@ -67,7 +67,7 @@ const ContactUs = () => {
               </p>
             </div>
             <div className=" mx-auto ">
-              <img className="about-me-img" src={tool} alt="teamwork" />
+              <img className=" img-fluid p-3" src={tool} alt="teamwork" />
             </div>
           </div>
         </div>

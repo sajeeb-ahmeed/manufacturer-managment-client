@@ -65,6 +65,10 @@ const Login = () => {
     }
   }, [signInUser, navigate, from]);
 
+  if (signInUser) {
+    navigate(from, { replace: true });
+    toast.success('Successfully created');
+  }
   // Using Function to Reset password if User forgets password
   const handleForgetPassword = async () => {
     await sendPasswordResetEmail(email);

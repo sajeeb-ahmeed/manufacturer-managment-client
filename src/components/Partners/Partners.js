@@ -1,10 +1,10 @@
 import React from 'react';
-import airhub from '../../../images/brands/Airbnb_Logo.png';
-import fedex from '../../../images/brands/FedEx_logo.png';
-import Google_Logo from '../../../images/brands/Google_Logo.png';
-import hubspot from '../../../images/brands/Hubspot_Logo.png';
-import microsoft from '../../../images/brands/Microsoft_Logo.png';
-import walmart from '../../../images/brands/Walmart_Logo.png';
+import airhub from '../../images/brands/Airbnb_Logo.png';
+import fedex from '../../images/brands/FedEx_logo.png';
+import Google_Logo from '../../images/brands/Google_Logo.png';
+import hubspot from '../../images/brands/Hubspot_Logo.png';
+import microsoft from '../../images/brands/Microsoft_Logo.png';
+import walmart from '../../images/brands/Walmart_Logo.png';
 import './partner.css'
 const Partners = () => {
     return (

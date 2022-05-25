@@ -115,8 +115,8 @@ const ConfirmPurchase = () => {
       </div>
 
       <div className="d-flex flex-lg-row flex-column justify-content-around align-items-center   container mx-auto">
-        <div className=" mx-5">
-          <Card className="shadow shadow-xl cards2 card-bg2">
+        <div className=" mx-lg-5">
+          <Card className="shadow cards2 card-bg2">
 
             <CardImg className="tool-img tool-img p-4 card-bg2 imgCards card4" src={toolImage} alt="bookName" />
 

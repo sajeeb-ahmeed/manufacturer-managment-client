@@ -1,9 +1,10 @@
-.icon{
-    font-size: 80px;
+.icon {
+    font-size: 50px;
 }
-.summary-header, .number{
-    font-size: 30px;
+
+.summary-header,
+.number {
+    font-size: 24px;
     font-weight: bold;
     font-family: "Ubuntu", sans-serif;
 }
-

@@ -34,9 +34,9 @@ const HomeProducts = () => {
       toolDescription,
     }) => {
       return (
-        <div className="col-md-4 col-sm-6 mb-4 tool-card cards-special">
+        <div className="col-md-4 col-sm-6 mb-4  cards-special">
           <Card
-            className="shadow shadow-xl"
+            className="shadow "
           >
             <Card.Img className="tool-img p-4 card-bg2 imgCards card4" variant="top" src={toolImage} />
             <Card.Body className='nav-bg'>

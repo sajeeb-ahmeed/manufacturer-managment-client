@@ -11,6 +11,10 @@ import FAQ from "../FAQ/FAQ";
 import Subscribe from "../Subscribe/Subscribe";
 import HomeProducts from "../HomeProducts/HomeProducts";
 import Reviews from "../Swiper/Reviews";
+import Partners from "../Partners/Partners";
+import Services from "../service/Services";
+import Quotes from "../QuickQuote/Quotes";
+import SoluationGuide from "../soluation_guide/SoluationGuide";
 
 const Home = () => {
   return (
@@ -25,7 +29,7 @@ const Home = () => {
           <Summary
             icon={faEarthAmerica}
             header="+ Countries"
-            number={47}
+            number={67}
           ></Summary>
         </div>
         <div className="my-5 my-lg-0">
@@ -36,7 +40,7 @@ const Home = () => {
           ></Summary>
         </div>
         <div>
-          <Summary icon={faStar} header="+ Feedback" number={134}></Summary>
+          <Summary icon={faStar} header="+ Feedback" number={164}></Summary>
         </div>
       </div>
 
@@ -48,15 +52,21 @@ const Home = () => {
       </div>
 
       <div className="my-5 container">
-        <h1 className="text-center text-muted mb-4 ">
-          Frequently Asked Questions
-        </h1>
-        <FAQ></FAQ>
+
+        <Partners></Partners>
       </div>
 
       <div className="my-5 container">
-        <h1 className="text-center text-danger mb-4">Get In Touch With Us!</h1>
-        <Subscribe></Subscribe>
+        <Services></Services>
+
+      </div>
+      <div className="my-5 container-fluid ">
+        <SoluationGuide></SoluationGuide>
+
+      </div>
+      <div className="my-5 container">
+        <Quotes></Quotes>
+
       </div>
     </div>
   );
