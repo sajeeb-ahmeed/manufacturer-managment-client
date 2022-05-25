@@ -90,7 +90,7 @@ const Dashboard = () => {
             <NavLink
               className={({ isActive }) =>
                 isActive
-                  ? `dashboard-active-link `
+                  ? `dashboard-active-link  `
                   : `dashboard-inactive-link `
               }
               to="/dashboard/my-profile"
