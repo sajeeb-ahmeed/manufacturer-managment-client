@@ -177,7 +177,7 @@ const Dashboard = () => {
                 : `d-block`
             }
           >
-            <h1 className="text-center text-success">
+            <h1 className="text-center text-info">
               Welcome To Your Dashboard
             </h1>
 
