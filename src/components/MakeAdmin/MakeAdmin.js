@@ -17,7 +17,7 @@ const MakeAdmin = () => {
 
   const handleMakeAdmin = (email) => {
     setReload(true);
-    fetch(`https://manufacturer-xpart.herokuapp.com/user/admin/${email}`, {
+    fetch(`http://localhost:5000/user/admin/${email}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -34,12 +34,12 @@ const MakeAdmin = () => {
 
 
   const handleRemoveAdmin = (email) => {
-    if(email === authUser?.email){
+    if (email === authUser?.email) {
       toast.error("You can't remove yourself from admin");
       return;
     }
     setReload(true);
-    fetch(`https://manufacturer-xpart.herokuapp.com/user/admin/${email}`, {
+    fetch(`http://localhost:5000/user/admin/${email}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
@@ -54,7 +54,7 @@ const MakeAdmin = () => {
       });
   };
 
-  
+
 
   const singleAdmin = allAdmin.map(({ email, role }, index) => {
     return (
@@ -71,10 +71,10 @@ const MakeAdmin = () => {
         <td className="text-center">
           <small>
 
-      
-          <button onClick={() => handleRemoveAdmin(email)} className="btn btn-danger d-block mx-auto">Remove</button>
-           
-           
+
+            <button onClick={() => handleRemoveAdmin(email)} className="btn btn-danger d-block mx-auto">Remove</button>
+
+
           </small>
         </td>
       </tr>
@@ -94,15 +94,15 @@ const MakeAdmin = () => {
         </td>
         <td className="text-center">
           <small>
-            
-           {
-            //  find the admin with the same email as the user
-            allAdmin.find(admin => admin.email === email) ? (
-              <strong className="text-center text-danger">Admin</strong>
-            ) : (
-              <button onClick={() => handleMakeAdmin(email)} className="btn btn-success d-block mx-auto">Make Admin</button>
-            )
-           }
+
+            {
+              //  find the admin with the same email as the user
+              allAdmin.find(admin => admin.email === email) ? (
+                <strong className="text-center text-danger">Admin</strong>
+              ) : (
+                <button onClick={() => handleMakeAdmin(email)} className="btn btn-success d-block mx-auto">Make Admin</button>
+              )
+            }
           </small>
         </td>
       </tr>

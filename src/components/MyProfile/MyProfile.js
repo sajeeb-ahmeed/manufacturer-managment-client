@@ -12,7 +12,7 @@ const MyProfile = () => {
   const [user, setUser] = useState({});
 
   useEffect(() => {
-    fetch(`https://manufacturer-xpart.herokuapp.com/user/${authUser?.email}`, {
+    fetch(`http://localhost:5000/user/${authUser?.email}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -48,8 +48,8 @@ const MyProfile = () => {
                 user.photoURL
                   ? user.photoURL
                   : authUser?.photoURL
-                  ? authUser?.photoURL
-                  : "https://foxdogconsultants.com/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png"
+                    ? authUser?.photoURL
+                    : "https://foxdogconsultants.com/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png"
               }
               alt="userPhoto"
             />
@@ -68,8 +68,8 @@ const MyProfile = () => {
               {authUser?.displayName
                 ? authUser?.displayName
                 : user?.displayName
-                ? user?.displayName
-                : "N/A"}
+                  ? user?.displayName
+                  : "N/A"}
             </span>
           </p>
           <p>

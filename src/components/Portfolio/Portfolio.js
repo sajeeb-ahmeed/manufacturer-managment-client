@@ -12,8 +12,8 @@ const Portfolio = () => {
       <div className="container my-5">
         <div className="row g-3 mb-5">
           <div className="col-md-6 col-12 ">
-            <p className="mb-3 text-center text-lg-start d-flex justify-content-center align-items-center">
-              <img src={myimg} className='img-fluid w-50  rounded-pill' alt=" my images" />
+            <p className="mb-3 text-center text-lg-start d-flex align-items-center">
+              <img src={myimg} className='img-fluid w-25  rounded-pill' alt=" my images" />
               <span className="title">MERN Stack Web Developer</span>
             </p>
             <h2 className="my-name">

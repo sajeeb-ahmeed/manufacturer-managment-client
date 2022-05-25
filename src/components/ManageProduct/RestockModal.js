@@ -5,7 +5,7 @@ import toast from "react-hot-toast";
 import auth from "../firebase.init";
 
 const RestockModal = (props) => {
-  const {  tools, restockId, setReloadModal } = props;
+  const { tools, restockId, setReloadModal } = props;
   console.log(tools);
   console.log(restockId);
 
@@ -21,8 +21,8 @@ const RestockModal = (props) => {
   };
 
   const handleUpdateStock = (e) => {
-      setReloadModal(true);
-    fetch(`https://manufacturer-xpart.herokuapp.com/product/${restockId}`, {
+    setReloadModal(true);
+    fetch(`http://localhost:5000/product/${restockId}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

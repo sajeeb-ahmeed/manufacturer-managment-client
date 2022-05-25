@@ -31,7 +31,7 @@ const MyOrders = () => {
   // React Hook for Fetching All Books From The Server API
   useEffect(() => {
     setIsLoading(true);
-    fetch(`https://manufacturer-xpart.herokuapp.com/orders/${authUser?.email}`, {
+    fetch(`http://localhost:5000/orders/${authUser?.email}`, {
       headers: {
         "Content-Type": "application/json",
         email: `${authUser?.email}`,
@@ -56,7 +56,7 @@ const MyOrders = () => {
     // setProceed(true);
     // axiosPrivate
     //   .put(
-    //     `https://manufacturer-xpart.herokuapp.com/orders/${id}`,
+    //     `http://localhost:5000/orders/${id}`,
     //     { isPaid: true },
     //     {
     //       headers: {
@@ -189,10 +189,10 @@ const MyOrders = () => {
     if (proceed) {
       setReload(true);
       axiosPrivate
-        .delete(`https://manufacturer-xpart.herokuapp.com/orders/${cancelOrderId}`)
-        .then(({data}) => {
+        .delete(`http://localhost:5000/orders/${cancelOrderId}`)
+        .then(({ data }) => {
           console.log(data);
-          if(data.deletedCount){
+          if (data.deletedCount) {
             toast.success("Order Cancelled Successfully");
           }
         });

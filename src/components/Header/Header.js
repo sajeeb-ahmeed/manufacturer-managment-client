@@ -48,15 +48,15 @@ const Header = () => {
       }
     >
       <div>
-        <div className="pt-4 navbar-container navbar-mobile">
-          <Navbar className="navbar-bg" collapseOnSelect expand="lg">
+        <div className=" navbar-container navbar-mobile nav-bg">
+          <Navbar className="navbar-bg py-4" collapseOnSelect expand="lg">
             <Container>
               <Link to="/">
                 <div className="logo-img-container">
                   <img className="logo-img" src={`https://cdn.shopify.com/s/files/1/2721/6956/files/logo_1_300x300.png`} alt="logo" />
                 </div>
               </Link>
-              <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+              <Navbar.Toggle aria-controls="responsive-navbar-nav" className="text-light" />
               <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mx-auto">
                   <NavLink

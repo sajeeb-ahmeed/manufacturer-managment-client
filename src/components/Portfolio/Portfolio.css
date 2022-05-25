@@ -72,7 +72,7 @@ a {
   -webkit-text-fill-color: transparent;
 }
 
-h2 {
+.my-name h2 {
   color: #1f1f25;
   font-weight: 900;
   line-height: 90px;
@@ -84,7 +84,7 @@ h2 span {
   color: #fd4766;
 }
 
-p {
+.my-intro {
   width: 55%;
   color: #757575;
   margin-top: 25px;

@@ -38,7 +38,7 @@ const ManageProduct = () => {
     console.log("data deleted");
     if (proceed) {
       setReload(true);
-      fetch(`https://manufacturer-xpart.herokuapp.com/product/${deleteOrderId}`, {
+      fetch(`http://localhost:5000/product/${deleteOrderId}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",

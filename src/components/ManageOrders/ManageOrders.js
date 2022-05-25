@@ -17,12 +17,12 @@ const ManageOrders = () => {
   const [tools, setTools] = useTools(reload);
 
   const handleDeliver = async (id, toolName, requiredQuantity, quantity, isPaid) => {
-    if(isPaid){
+    if (isPaid) {
       console.log(id);
       setReload(true);
       axiosPrivate
         .put(
-          `https://manufacturer-xpart.herokuapp.com/orders/${id}`,
+          `http://localhost:5000/orders/${id}`,
           { isDelivered: true },
           {
             headers: {
@@ -45,7 +45,7 @@ const ManageOrders = () => {
                 parseInt(requiredQuantity)
               ).toString(),
             };
-            fetch(`https://manufacturer-xpart.herokuapp.com/product/${requiredTool._id}`, {
+            fetch(`http://localhost:5000/product/${requiredTool._id}`, {
               method: "PUT",
               headers: {
                 "Content-Type": "application/json",
@@ -63,7 +63,7 @@ const ManageOrders = () => {
           }
         });
     }
-    else{
+    else {
       toast.error("Order is not paid yet!");
     }
   };

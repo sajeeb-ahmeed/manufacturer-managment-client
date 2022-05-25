@@ -8,7 +8,7 @@ const useBlogs = () => {
   // useEffect Hook to Fetch blogs data from server api
   useEffect(() => {
     setIsLoading(true);
-    fetch("https://manufacturer-xpart.herokuapp.com/blogs")
+    fetch("http://localhost:5000/blogs")
       .then((res) => res.json())
       .then((data) => {
         setBlogs(data);
