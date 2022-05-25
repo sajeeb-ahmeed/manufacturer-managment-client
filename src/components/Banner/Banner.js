@@ -6,7 +6,7 @@ const Banner = () => {
   return (
     <div className="container-fluid">
       <div className="cursor">
-        <Link to='/pruches'>
+        <Link to='/all-products'>
           <img src={plumber} className=" img-fluid rounded-lg shadow-2xl" alt='' />
         </Link>
 
