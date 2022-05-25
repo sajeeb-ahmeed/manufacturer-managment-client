@@ -225,6 +225,12 @@ nav a:hover {
     transform: scale(0.95);
 }
 
+.purchease-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    overflow-x: hidden;
+}
 
 
 @keyframes animate {
