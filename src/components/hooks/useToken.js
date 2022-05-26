@@ -10,7 +10,7 @@ const useToken = (user) => {
     const getToken = async () => {
       const email = user?.email;
       if (email) {
-        const { data } = await axios.post("http://localhost:5000/login", {
+        const { data } = await axios.post("https://vast-garden-53316.herokuapp.com/login", {
           email,
         });
         setToken(data.accessToken);

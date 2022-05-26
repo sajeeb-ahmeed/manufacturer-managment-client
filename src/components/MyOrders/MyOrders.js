@@ -31,7 +31,7 @@ const MyOrders = () => {
   // React Hook for Fetching All Books From The Server API
   useEffect(() => {
     setIsLoading(true);
-    fetch(`http://localhost:5000/orders/${authUser?.email}`, {
+    fetch(`https://vast-garden-53316.herokuapp.com/orders/${authUser?.email}`, {
       headers: {
         "Content-Type": "application/json",
         email: `${authUser?.email}`,
@@ -56,7 +56,7 @@ const MyOrders = () => {
     // setProceed(true);
     // axiosPrivate
     //   .put(
-    //     `http://localhost:5000/orders/${id}`,
+    //     `https://vast-garden-53316.herokuapp.com/orders/${id}`,
     //     { isPaid: true },
     //     {
     //       headers: {
@@ -189,7 +189,7 @@ const MyOrders = () => {
     if (proceed) {
       setReload(true);
       axiosPrivate
-        .delete(`http://localhost:5000/orders/${cancelOrderId}`)
+        .delete(`https://vast-garden-53316.herokuapp.com/orders/${cancelOrderId}`)
         .then(({ data }) => {
           console.log(data);
           if (data.deletedCount) {

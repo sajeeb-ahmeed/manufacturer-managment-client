@@ -22,7 +22,7 @@ const RestockModal = (props) => {
 
   const handleUpdateStock = (e) => {
     setReloadModal(true);
-    fetch(`http://localhost:5000/product/${restockId}`, {
+    fetch(`https://vast-garden-53316.herokuapp.com/product/${restockId}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

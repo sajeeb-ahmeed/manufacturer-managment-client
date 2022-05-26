@@ -12,7 +12,7 @@ const MyProfile = () => {
   const [user, setUser] = useState({});
 
   useEffect(() => {
-    fetch(`http://localhost:5000/user/${authUser?.email}`, {
+    fetch(`https://vast-garden-53316.herokuapp.com/user/${authUser?.email}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

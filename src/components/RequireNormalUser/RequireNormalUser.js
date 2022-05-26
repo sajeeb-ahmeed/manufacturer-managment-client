@@ -17,7 +17,7 @@ const RequireNormalUser = ({ children }) => {
     console.log(user);
     useEffect(() => {
         fetch(
-            `http://localhost:5000/admin/${authUser?.email}`,
+            `https://vast-garden-53316.herokuapp.com/admin/${authUser?.email}`,
             {
                 method: "GET",
                 headers: {
@@ -33,7 +33,7 @@ const RequireNormalUser = ({ children }) => {
                 setAdmin(data);
             });
 
-        fetch(`http://localhost:5000/user/${authUser?.email}`, {
+        fetch(`https://vast-garden-53316.herokuapp.com/user/${authUser?.email}`, {
             method: "GET",
             headers: {
                 "content-type": "application/json",

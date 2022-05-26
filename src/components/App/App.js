@@ -47,7 +47,7 @@ function App() {
     if (authUser) {
       axiosPrivate
         .put(
-          `http://localhost:5000/user/${authUser?.email}`,
+          `https://vast-garden-53316.herokuapp.com/user/${authUser?.email}`,
           { email: authUser?.email, role: "user" },
           {
             headers: {

@@ -22,7 +22,7 @@ const ManageOrders = () => {
       setReload(true);
       axiosPrivate
         .put(
-          `http://localhost:5000/orders/${id}`,
+          `https://vast-garden-53316.herokuapp.com/orders/${id}`,
           { isDelivered: true },
           {
             headers: {
@@ -45,7 +45,7 @@ const ManageOrders = () => {
                 parseInt(requiredQuantity)
               ).toString(),
             };
-            fetch(`http://localhost:5000/product/${requiredTool._id}`, {
+            fetch(`https://vast-garden-53316.herokuapp.com/product/${requiredTool._id}`, {
               method: "PUT",
               headers: {
                 "Content-Type": "application/json",

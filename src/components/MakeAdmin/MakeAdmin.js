@@ -19,7 +19,7 @@ const MakeAdmin = () => {
   const handleMakeAdmin = (email) => {
     console.log(email);
     setReload(true);
-    fetch(`http://localhost:5000/user/admin/${email}`, {
+    fetch(`https://vast-garden-53316.herokuapp.com/user/admin/${email}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -42,7 +42,7 @@ const MakeAdmin = () => {
       return;
     }
     setReload(true);
-    fetch(`http://localhost:5000/user/admin/${email}`, {
+    fetch(`https://vast-garden-53316.herokuapp.com/user/admin/${email}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",

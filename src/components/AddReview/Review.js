@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 const Review = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = (data) => {
-        fetch("http://localhost:5000/review", {
+        fetch("https://vast-garden-53316.herokuapp.com/review", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data)
