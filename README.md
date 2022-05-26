@@ -1,31 +1,47 @@
-# Getting Started with Create React App
+# Welcome to Nora Hardware
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Menufactured Live App  [Menufacture Nora Hardware](https://manufacture-hardware.web.app/).
 
-## Available Scripts
+## Overused marketing phrases
+### Featured 
+              1. FEP Nora Hardware OF THE YEAR 2020 - Wedding Golden Hardware 
+                  1. With a passion for / We are passionate about / We believe 
+                    2. Make your dreams a reality / Bring your vision to life / Dream wedding 
+                   3. Go the extra mile / Go above and beyond / Take it to the next level 
+                   4.Perfect day / Special day / Best day of your life / Best day ever / Once-in-a-lifetime
+                    5.Happy / wounderful /decurated family
 
-In the project directory, you can run:
+  ### Nora Hardware is a dream changer 
+  **Nora Hardware Hardware is considered to be the ‘game-changer’ in Bangladesh’s Hardware industry. Carefully-chosen raw material, environment-friendly business practice and customer-centric approach is what made MORDERNA a beloved brand at home and abroad.**  
 
-### `npm start`
+ ## So what should I do instead?
+* The Essentials
+              * Is this submission addressed to me or my publication?
+                  * Has this shoot been submitted or published elsewhere
+          * The Hardware 
+          * Have the Hardware  been edited in a consistent style for seamless flow?
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* Have enough Hardware  been supplied to tell a compelling story?
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+*  How much time will it take to sort through the Hardware  and make a selection?
 
-### `npm test`
+*  Does this Hardware  feature images that will resonate with our followers on Instagram and Facebook?
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+*  Does this shoot feature portrait images of details that will appeal on Pinterest?
 
-### `npm run build`
+## Use Tools 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Tools | Assists | Meterials
+| :--- | ---: | :---:
+ Mongodb | Node Js | Express Js
+ Hero kuu | JWT | dotenv
+ Stripe | daisy ui |React Leflet
+ React Authentication |  React Bootstrap |  React firebase hooks
+ React Hooks Form | React Halmate | React hot toast
+ React Icons | React Router | Components
+React Hot Toast   | React Dom | RequireAuth
+Vs Code  | Firebase| Google Authentication 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 

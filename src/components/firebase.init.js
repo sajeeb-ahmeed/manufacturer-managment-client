@@ -6,12 +6,12 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBF4Fa6IITXTc6ASucdtaJcfnbdU9eNp-A",
-  authDomain: "taz-dental.firebaseapp.com",
-  projectId: "taz-dental",
-  storageBucket: "taz-dental.appspot.com",
-  messagingSenderId: "842975418722",
-  appId: "1:842975418722:web:5c5a4465c90a91df2cf43b"
+  apiKey: "AIzaSyChiqJu3ytsC3kQqCYYvWJxeCsZh7SvcK4",
+  authDomain: "manufacture-hardware.firebaseapp.com",
+  projectId: "manufacture-hardware",
+  storageBucket: "manufacture-hardware.appspot.com",
+  messagingSenderId: "992203585624",
+  appId: "1:992203585624:web:1ae50f624ebe695ff5b22d"
 };
 
 // Initialize Firebase
