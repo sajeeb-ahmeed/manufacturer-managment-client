@@ -18,7 +18,7 @@ const CheckoutForm = (props) => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("https://manufacturer-xpart.herokuapp.com/create-payment-intent", {
+    fetch("http://localhost:5000/create-payment-intent", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

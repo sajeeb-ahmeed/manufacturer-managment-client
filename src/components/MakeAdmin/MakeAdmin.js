@@ -13,20 +13,23 @@ const MakeAdmin = () => {
   const [reload, setReload] = useState(false);
 
   const [allUsers, setAllUsers, isLoading] = useAllUsers(reload);
+  console.log(allUsers);
   const [allAdmin] = useAllAdmin(reload);
 
   const handleMakeAdmin = (email) => {
+    console.log(email);
     setReload(true);
     fetch(`http://localhost:5000/user/admin/${email}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
         authorization: `Bearer ${localStorage.getItem("accessToken")}`,
+        email: `${authUser?.email}`,
       },
     })
       .then((res) => res.json())
       .then((data) => {
-        // console.log(data);
+        console.log(data);
         setReload(false);
         // setAllAdmin(data.admin);
       });
@@ -44,11 +47,12 @@ const MakeAdmin = () => {
       headers: {
         "Content-Type": "application/json",
         authorization: `Bearer ${localStorage.getItem("accessToken")}`,
+        email: `${authUser?.email}`,
       },
     })
       .then((res) => res.json())
       .then((data) => {
-        // console.log(data);
+        console.log(data);
         setReload(false);
         // setAllAdmin(data.admin);
       });
@@ -80,9 +84,11 @@ const MakeAdmin = () => {
       </tr>
     );
   });
-  const singleUser = allUsers.map(({ email, role }, index) => {
+  const singleUser = allUsers.map(({ _id, email, role }, index) => {
     return (
-      <tr>
+      <tr
+        key={_id}
+      >
         <td className="text-center">
           <small>{index + 1}</small>
         </td>

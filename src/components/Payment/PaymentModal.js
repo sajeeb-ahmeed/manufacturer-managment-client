@@ -5,7 +5,7 @@ import { Button, Modal } from 'react-bootstrap';
 import CheckoutForm from './CheckoutForm';
 
 const stripePromise = loadStripe(
-  "pk_test_51L1AluJj9PhccftjDdBJ2ZACeGlSFye0jHtfeHCZHIhMt9eMsS0Wqn5nEWQyNGTwu3RvClM8wQyfws5BFhnTToqC00MdNDoq4X"
+  "pk_test_51L3ZUeJVFq4gae0XcZNoqHIAZijz7mV24aXCgZcHKFcpvxM84Q6DX6iX2GPTOhYNMjPKrJAIbYAgtqZc2vLJ6GZQ00jqgbJXas"
 );
 const PaymentModal = (props) => {
   console.log(props.requiredOrder);
