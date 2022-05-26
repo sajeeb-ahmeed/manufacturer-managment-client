@@ -93,7 +93,7 @@ export default function App() {
                               ))}
                           </div>
                         </div>
-                        <i className="review text-muted">"{review.slice(0,150)}"</i>
+                        <i className="review text-muted">"{review.slice(0, 150)}"</i>
                       </Card.Text>
                     </Card.Body>
                   </Card>

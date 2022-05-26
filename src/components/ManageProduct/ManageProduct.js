@@ -18,24 +18,24 @@ const ManageProduct = () => {
   const [deleteOrderId, setDeleteOrderId] = React.useState("");
   const [restockId, setRestockId] = React.useState("");
 
-  console.log(reload);
+  // console.log(reload);
   const [tools, setTools, isLoading] = useTools(reload, reloadModal);
   const [authUser] = useAuthState(auth);
 
   const handleDeleteProduct = (id) => {
-    console.log(id);
+    // console.log(id);
     setModalShowDelete(true);
     setDeleteOrderId(id);
   };
 
   const handleRestockProduct = (id) => {
-    console.log(id);
+    // console.log(id);
     setModalShowRestock(true);
     setRestockId(id);
   }
 
   useEffect(() => {
-    console.log("data deleted");
+    // console.log("data deleted");
     if (proceed) {
       setReload(true);
       fetch(`http://localhost:5000/product/${deleteOrderId}`, {
@@ -49,7 +49,7 @@ const ManageProduct = () => {
         .then((response) => response.json())
         .then((json) => {
           setReload(false);
-          console.log(json);
+          // console.log(json);
           toast.success("Product Deleted Successfully");
         });
       setDeleteOrderId("");

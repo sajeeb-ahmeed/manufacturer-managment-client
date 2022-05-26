@@ -6,12 +6,12 @@ import auth from "../firebase.init";
 
 const RestockModal = (props) => {
   const { tools, restockId, setReloadModal } = props;
-  console.log(tools);
-  console.log(restockId);
+  // console.log(tools);
+  // console.log(restockId);
 
   //find the product form tools array by restock IDs
   const product = tools.find((tool) => tool._id === restockId);
-  console.log(product);
+  // console.log(product);
   const [quantity, setQuantity] = useState("");
   const [authUser] = useAuthState(auth);
 
@@ -33,7 +33,7 @@ const RestockModal = (props) => {
     })
       .then((response) => response.json())
       .then((json) => {
-        console.log(json);
+        // console.log(json);
         props.onHide();
         toast.success("Product Restocked Successfully");
         setReloadModal(false);

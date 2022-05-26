@@ -9,16 +9,16 @@ import "./Dashboard.css"
 const Dashboard = () => {
   const { pathname } = useLocation();
   const [user] = useAuthState(auth);
-  console.log(user);
+  // console.log(user);
   const [admin] = useAdmin(user);
 
-  console.log(admin);
+  // console.log(admin);
   // console.log(admin);
 
   const [showDashboard, setShowDashboard] = useState(false);
-  console.log(showDashboard);
+  // console.log(showDashboard);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  console.log(windowWidth);
+  // console.log(windowWidth);
 
   const handleShowDashboard = () => {
     setShowDashboard(
@@ -72,7 +72,7 @@ const Dashboard = () => {
               </NavLink>
             </div>
           </div>
-          <div className={admin ? "d-none" : "d-block"}>
+          <div >
             <div className="d-flex justify-content-center">
               <NavLink
                 className={({ isActive }) =>

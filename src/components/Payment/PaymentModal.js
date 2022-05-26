@@ -8,23 +8,23 @@ const stripePromise = loadStripe(
   "pk_test_51L1AluJj9PhccftjDdBJ2ZACeGlSFye0jHtfeHCZHIhMt9eMsS0Wqn5nEWQyNGTwu3RvClM8wQyfws5BFhnTToqC00MdNDoq4X"
 );
 const PaymentModal = (props) => {
-    console.log(props.requiredOrder);
-    return (
-      <Modal
-        {...props}
-        size="md"
-        aria-labelledby="contained-modal-title-vcenter"
-        centered
-      >
-        <Modal.Header closeButton>
-          <Modal.Title id="contained-modal-title-vcenter"></Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <Elements stripe={stripePromise}>
-            <CheckoutForm requiredOrder={props?.requiredOrder} onHide={props.onHide} />
-          </Elements>
-        </Modal.Body>
-        {/* <Modal.Footer>
+  console.log(props.requiredOrder);
+  return (
+    <Modal
+      {...props}
+      size="md"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter"></Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <Elements stripe={stripePromise}>
+          <CheckoutForm requiredOrder={props?.requiredOrder} onHide={props.onHide} />
+        </Elements>
+      </Modal.Body>
+      {/* <Modal.Footer>
           <Button
             className="btn btn-danger d-block mx-auto px-5"
             onClick={() => {
@@ -40,8 +40,8 @@ const PaymentModal = (props) => {
             Restock
           </Button>
         </Modal.Footer> */}
-      </Modal>
-    );
+    </Modal>
+  );
 };
 
 

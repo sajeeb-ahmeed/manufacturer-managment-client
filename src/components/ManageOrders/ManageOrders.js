@@ -18,7 +18,7 @@ const ManageOrders = () => {
 
   const handleDeliver = async (id, toolName, requiredQuantity, quantity, isPaid) => {
     if (isPaid) {
-      console.log(id);
+      // console.log(id);
       setReload(true);
       axiosPrivate
         .put(
@@ -32,12 +32,12 @@ const ManageOrders = () => {
         )
         .then(({ data }) => {
           if (data.modifiedCount) {
-            console.log(data);
+            // console.log(data);
             // find the tool from trools array by toolName of that orders
             const requiredTool = tools.find(
               (tool) => tool.toolName === toolName
             );
-            console.log(requiredTool.toolName);
+            // console.log(requiredTool.toolName);
             // update the tool quantity
             const newTool = {
               availableQuantity: (
@@ -56,7 +56,7 @@ const ManageOrders = () => {
             })
               .then((response) => response.json())
               .then((json) => {
-                console.log(json);
+                // console.log(json);
                 setReload(false);
                 toast.success("Order Delivered");
               });

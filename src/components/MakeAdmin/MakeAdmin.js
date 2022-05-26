@@ -26,7 +26,7 @@ const MakeAdmin = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        // console.log(data);
         setReload(false);
         // setAllAdmin(data.admin);
       });
@@ -48,7 +48,7 @@ const MakeAdmin = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        // console.log(data);
         setReload(false);
         // setAllAdmin(data.admin);
       });

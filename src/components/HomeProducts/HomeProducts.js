@@ -14,7 +14,7 @@ const HomeProducts = () => {
   //Reverse an tools array
 
   const slicedTools = [...tools].reverse().slice(0, 6);
-  console.log(slicedTools);
+  // console.log(slicedTools);
 
 
   const handleConfirmPurchase = (id) => {

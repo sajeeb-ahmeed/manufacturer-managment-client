@@ -32,7 +32,7 @@ const ConfirmPurchase = () => {
       .then((response) => {
         const { data } = response;
         setTool(data);
-        console.log(data);
+        // console.log(data);
       });
   }, [authUser, params.id]);
 
@@ -48,7 +48,7 @@ const ConfirmPurchase = () => {
   const [requiredQuantity, setRequiredQuantity] = useState("");
 
   useEffect(() => {
-    console.log(totalPrice);
+    // console.log(totalPrice);
     setTotalPrice(parseInt(toolPrice) * parseInt(requiredQuantity));
     if (parseInt(requiredQuantity) < parseInt(minOrder)) {
       setError("Minimum order is " + minOrder);
@@ -95,9 +95,9 @@ const ConfirmPurchase = () => {
       )
       .then((response) => {
         const { data } = response;
-        console.log(data);
+        // console.log(data);
         if (data.insertedId) {
-          console.log("Order added to database");
+          // console.log("Order added to database");
           setReload(!reload);
           navigate("/dashboard/my-orders");
           window.scrollTo(0, 0);

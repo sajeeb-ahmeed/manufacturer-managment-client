@@ -1,13 +1,15 @@
-.review-img{
+.review-img {
     width: 50px !important;
     height: 50px !important;
     border-radius: 50%;
 }
-.review, .user{
+
+.review,
+.user {
     font-family: "Ubuntu", sans-serif;
 }
 
-.review-card{
+.review-card {
     width: 500px !important;
 }
 
@@ -16,8 +18,7 @@
 } */
 
 @media screen and (max-width: 768px) {
-    .review-card{
+    .review-card {
         width: 300px !important;
     }
 }
-    

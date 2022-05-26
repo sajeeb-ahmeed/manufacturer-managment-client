@@ -9,10 +9,10 @@ import "./UpdateProfile.css";
 
 const UpdateProfile = () => {
   const [authUser] = useAuthState(auth);
-  console.log(authUser);
+  // console.log(authUser);
   const [updateProfile] = useUpdateProfile(auth);
   const [user, setUser] = useState({});
-  console.log(user);
+  // console.log(user);
 
   useEffect(() => {
     fetch(`http://localhost:5000/user/${authUser?.email}`, {
@@ -43,7 +43,7 @@ const UpdateProfile = () => {
     const formData = new FormData();
     formData.append("image", image);
     const url = `https://api.imgbb.com/1/upload?key=91a25467b20a9debe14fa8cbbc3a4a74`;
-    console.log(url);
+    // console.log(url);
     if (data?.photoURL[0]) {
       fetch(url, {
         method: "POST",
@@ -52,7 +52,7 @@ const UpdateProfile = () => {
         .then((res) => res.json())
         .then((result) => {
           if (result.success) {
-            console.log(result);
+            // console.log(result);
             const img = result.data.url;
             const userInfo = {
               displayName: data.displayName || authUser.displayName,
@@ -64,7 +64,7 @@ const UpdateProfile = () => {
                 img ||
                 "https://foxdogconsultants.com/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png",
             };
-            console.log(userInfo);
+            // console.log(userInfo);
             fetch(`http://localhost:5000/update/user/${authUser.email}`, {
               method: "PUT",
               headers: {
@@ -76,7 +76,7 @@ const UpdateProfile = () => {
             })
               .then((response) => response.json())
               .then((json) => {
-                console.log(json);
+                // console.log(json);
                 toast.success("Profile Updated Successfully");
                 updateProfile({
                   displayName:
@@ -102,7 +102,7 @@ const UpdateProfile = () => {
           authUser?.photoURL ||
           "https://foxdogconsultants.com/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png",
       };
-      console.log(userInfo);
+      // console.log(userInfo);
       fetch(`http://localhost:5000/update/user/${authUser.email}`, {
         method: "PUT",
         headers: {
@@ -114,7 +114,7 @@ const UpdateProfile = () => {
       })
         .then((response) => response.json())
         .then((json) => {
-          console.log(json);
+          // console.log(json);
           toast.success("Profile Updated Successfully");
           updateProfile({
             displayName: data?.displayName || authUser?.displayName || "N/A",
@@ -127,7 +127,7 @@ const UpdateProfile = () => {
 
         });
     }
-    console.log(data);
+    // console.log(data);
 
   };
 

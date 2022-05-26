@@ -10,7 +10,7 @@ import useTools from "../hooks/useTools";
 const AddProduct = () => {
 
   const [tools, setTools, isLoading] = useTools();
-  console.log(tools);
+  // console.log(tools);
 
   // check if the product is already in the database
 
@@ -34,14 +34,14 @@ const AddProduct = () => {
   //https://api.imgbb.com/1/upload?key=process.env.IMGBB_API_KEY
 
   const onSubmit = async (data) => {
-    console.log(tools.find((tool) => tool.toolName === data.toolName));
+    // console.log(tools.find((tool) => tool.toolName === data.toolName));
     const alreadyExist = tools.find((tool) => tool.toolName === data.toolName);
     if (!alreadyExist) {
       const image = data.toolImage[0];
       const formData = new FormData();
       formData.append("image", image);
       const url = `https://api.imgbb.com/1/upload?key=91a25467b20a9debe14fa8cbbc3a4a74`;
-      console.log(url);
+      // console.log(url);
       fetch(url, {
         method: "POST",
         body: formData,
@@ -49,7 +49,7 @@ const AddProduct = () => {
         .then((res) => res.json())
         .then((result) => {
           if (result.success) {
-            console.log(result);
+            // console.log(result);
             const img = result.data.url;
             const tool = {
               toolName: data.toolName,
@@ -70,7 +70,7 @@ const AddProduct = () => {
             })
               .then((res) => res.json())
               .then((inserted) => {
-                console.log(inserted);
+                // console.log(inserted);
                 if (inserted._id) {
                   toast.success("Tool added successfully");
                   reset();

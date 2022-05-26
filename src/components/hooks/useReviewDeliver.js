@@ -7,7 +7,7 @@ import auth from "../firebase.init";
 const useReviewDeliver = (reloadModal) => {
   //Declaring State
   const [reviewsDeliver, setReviewsDeliver] = useState([]);
-  console.log(reviewsDeliver);
+  // console.log(reviewsDeliver);
   const [isLoading, setIsLoading] = useState(false);
 
   // React Firebase Hook
