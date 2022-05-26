@@ -125,16 +125,20 @@ small {
 }
 
 
-
+.object-cover {
+    object-fit: cover !important;
+}
 
 
 
 .color-2 {
     color: #0FAF97 !important;
+    font-weight: 600;
 }
 
 .color-2:hover {
     color: #112421b8 !important;
+    font-weight: 600;
 }
 
 .cta2:before {

@@ -111,7 +111,7 @@
 .cta2:hover:before {
     width: 100%;
     background: #e7e7e7 !important;
-    color: #234567 !important;
+    color: #e49d2b !important;
 }
 
 .cta2:before {
@@ -133,7 +133,7 @@
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 0.05em;
-    color: #234567;
+    color: #000000;
 }
 
 .cta2 svg {

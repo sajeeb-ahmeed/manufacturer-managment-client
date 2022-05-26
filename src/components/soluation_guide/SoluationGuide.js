@@ -4,19 +4,19 @@ import { useNavigate } from 'react-router-dom';
 const SoluationGuide = () => {
     const navigate = useNavigate();
     const navigatTo = () => {
-        navigate('/blogs')
+        navigate('/portfolio')
     }
     return (
-        <div className='container-fluid my-5 card-bg2 text-center '>
+        <div className='container-fluid my-5 nav-bg text-center '>
             <div className='container flex-co py-3 '>
                 <div>
-                    <h5 className='text-dark'>NEWSLETTER</h5>
+                    <h5 className='text-warning'>NEWSLETTER</h5>
                     <p className='guide  text-light'>Not sure which solution fits you business needs?
 
                     </p>
                 </div>
                 <div>
-                    <input className='cards4 px-5 me-lg-3' placeholder='Your Email Address' type="text" />
+                    <input className='cards4 px-5 me-lg-3' required placeholder='Your Email Address' type="text" />
                     <button onClick={() => navigatTo()} className="cta2 ">
                         <span>Submit</span>
 

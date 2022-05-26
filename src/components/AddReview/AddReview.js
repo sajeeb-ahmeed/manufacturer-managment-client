@@ -50,7 +50,7 @@ const AddReview = () => {
               </small>
             </p>
           </Card.Header>
-          <Card.Body>
+          <Card.Body className='review-card'>
             <Card.Title>
               <div className="d-flex align-items-center">
                 <div>

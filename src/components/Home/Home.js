@@ -24,7 +24,7 @@ const Home = () => {
         <h1 className="text-center text-muted mb-5">Our Products</h1>
         <HomeProducts></HomeProducts>
       </div>
-      <div className="d-flex flex-lg-row flex-column  justify-content-evenly my-3 bg-success py-5">
+      <div className="d-flex flex-lg-row flex-column  justify-content-evenly my-3 nav-bg py-5">
         <div>
           <Summary
             icon={faEarthAmerica}
@@ -60,7 +60,7 @@ const Home = () => {
         <Services></Services>
 
       </div>
-      <div className="my-5 container-fluid ">
+      <div className="my-5 container-fluid nav-bg ">
         <SoluationGuide></SoluationGuide>
 
       </div>

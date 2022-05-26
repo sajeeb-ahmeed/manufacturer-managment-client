@@ -151,3 +151,8 @@ body {
 .cursor {
   cursor: pointer;
 }
+
+.review-card {
+  height: 270px;
+  padding: 10px;
+}
