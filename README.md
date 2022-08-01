@@ -20,7 +20,7 @@ Menufactured Live App  [Menufacture Nora Hardware](https://manufacture-hardware.
   ### Nora Hardware is a dream changer 
   **Nora Hardware Hardware is considered to be the ‘game-changer’ in Bangladesh’s Hardware industry. Carefully-chosen raw material, environment-friendly business practice and customer-centric approach is what made MORDERNA a beloved brand at home and abroad.**  
 
-
+ 
 
 ## Use Tools 
 
